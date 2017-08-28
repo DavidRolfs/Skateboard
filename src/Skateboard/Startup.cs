@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Skateboard.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-namespace FRPG
+namespace Skateboard
 {
     public class Startup
     {
@@ -46,7 +46,7 @@ namespace FRPG
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Account}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
             app.Run(async (context) =>
             {
