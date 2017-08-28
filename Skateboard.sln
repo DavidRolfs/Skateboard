@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5D3B0746-BEB2-4AE9-B106-8A8F04B69875}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27DA262D-B2E1-4B08-BB6C-0366A3761E7A}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Skateboard", "src\Skateboard\Skateboard.xproj", "{3344912E-1240-4FF0-B1B3-AB4024F86DC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3344912E-1240-4FF0-B1B3-AB4024F86DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3344912E-1240-4FF0-B1B3-AB4024F86DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3344912E-1240-4FF0-B1B3-AB4024F86DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3344912E-1240-4FF0-B1B3-AB4024F86DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3344912E-1240-4FF0-B1B3-AB4024F86DC7} = {5D3B0746-BEB2-4AE9-B106-8A8F04B69875}
+	EndGlobalSection
+EndGlobal
