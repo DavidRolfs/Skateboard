@@ -8,7 +8,11 @@
     <ul>
         @foreach (var board in Model)
         {
-            <li>@Html.DisplayFor(modelItem => board.Brand)</li>
+            <li>@Html.DisplayFor(modelItem => board.Brand)
+                @Html.ActionLink("Edit", "Edit", new { id = board.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = board.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = board.Id })
+            </li>
         }
     </ul>
 }

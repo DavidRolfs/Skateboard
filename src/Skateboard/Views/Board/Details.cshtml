@@ -1,0 +1,11 @@
+﻿@model Skateboard.Models.Board
+
+<p>@Html.DisplayNameFor(model => model.Brand): @Html.DisplayFor(model => model.Brand)</p>
+<p>@Html.DisplayNameFor(model => model.Year) : @Html.DisplayFor(model => model.Year)</p>
+<p>@Html.DisplayNameFor(model => model.Rider) : @Html.DisplayFor(model => model.Rider)</p>
+<p>@Html.DisplayNameFor(model => model.Series) : @Html.DisplayFor(model => model.Series)</p>
+<p>@Html.DisplayNameFor(model => model.Size) : @Html.DisplayFor(model => model.Size)</p>
+<p>@Html.DisplayNameFor(model => model.Img) : <img src="@Html.DisplayFor(model => model.Img)" /></p>
+<p>@Html.DisplayNameFor(model => model.ForSale) : @Html.DisplayFor(model => model.ForSale)</p>
+
+<p>@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) | @Html.ActionLink("Back to List", "Index")</p>

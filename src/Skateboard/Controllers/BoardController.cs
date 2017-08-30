@@ -26,6 +26,11 @@ namespace Skateboard.Controllers
             var currentUser = await _userManager.FindByIdAsync(userId);
             return View(_db.Boards.Where(x => x.User.Id == currentUser.Id));
         }
+        public IActionResult Details(int id)
+        {
+            var thisBoard = _db.Boards.FirstOrDefault(boards => boards.Id == id);
+            return View(thisBoard);
+        }
         public IActionResult Create()
         {
             return View();
