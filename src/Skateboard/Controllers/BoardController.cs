@@ -45,5 +45,18 @@ namespace Skateboard.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public IActionResult Edit(int id)
+        {
+            var thisBoard = _db.Boards.FirstOrDefault(boards => boards.Id == id);
+            return View(thisBoard);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Board board)
+        {
+            _db.Entry(board).State = EntityState.Modified;
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
