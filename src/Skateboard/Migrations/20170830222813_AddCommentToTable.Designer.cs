@@ -8,9 +8,10 @@ using Skateboard.Models;
 namespace Skateboard.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170830222813_AddCommentToTable")]
+    partial class AddCommentToTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")
@@ -200,22 +201,6 @@ namespace Skateboard.Migrations
                     b.ToTable("Boards");
                 });
 
-            modelBuilder.Entity("Skateboard.Models.Comment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Remark");
-
-                    b.Property<string>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Comments");
-                });
-
             modelBuilder.Entity("Skateboard.Models.Image", b =>
                 {
                     b.Property<int>("Id")
@@ -294,13 +279,6 @@ namespace Skateboard.Migrations
                 });
 
             modelBuilder.Entity("Skateboard.Models.Board", b =>
-                {
-                    b.HasOne("Skateboard.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("Skateboard.Models.Comment", b =>
                 {
                     b.HasOne("Skateboard.Models.ApplicationUser", "User")
                         .WithMany()

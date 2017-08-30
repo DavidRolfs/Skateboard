@@ -20,5 +20,7 @@ namespace Skateboard.Models
         public DbSet<Profile> Profiles { get; set; }
         public DbSet<Board> Boards { get; set; }
         public DbSet<Image> Images { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+
     }
 }

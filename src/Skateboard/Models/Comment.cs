@@ -10,5 +10,7 @@ namespace Skateboard.Models
         public int Id { get; set; }
         public string Remark { get; set; }
         public virtual ApplicationUser User { get; set; }
+        public int BoardId { get; set; }
+        public virtual Board Board { get; set; }
     }
 }
