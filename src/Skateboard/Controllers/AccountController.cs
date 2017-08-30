@@ -33,6 +33,11 @@ namespace Skateboard.Controllers
         {
             var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
             IdentityResult result = await _userManager.CreateAsync(user, model.Password);
+            Profile profile = new Profile(firstName, lastName, profileName, bio);
+            profile.Email = user.Email;
+            profile.UserId = user.Id;
+            _db.Profiles.Add(profile);
+            _db.SaveChanges();
             if (result.Succeeded)
             {
                 return RedirectToAction("Index");

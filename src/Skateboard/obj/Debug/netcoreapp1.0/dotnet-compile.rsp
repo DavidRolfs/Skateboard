@@ -207,8 +207,13 @@ c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\C
 c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Controllers\HomeController.cs
 c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170828172549_Initial.cs
 c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170828172549_Initial.Designer.cs
+c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170829234423_ProfileTable.cs
+c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170829234423_ProfileTable.Designer.cs
+c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830000419_userIdToProfile.cs
+c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830000419_userIdToProfile.Designer.cs
 c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Migrations\ApplicationDbContextModelSnapshot.cs
 c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Models\ApplicationDbContext.cs
 c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Models\ApplicationUser.cs
+c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\Models\Profile.cs
 c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\ViewModels\LoginViewModel.cs
 c:\users\david\documents\visual studio 2015\Projects\Skateboard\src\Skateboard\ViewModels\RegisterViewModel.cs

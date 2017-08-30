@@ -18,6 +18,7 @@ namespace Skateboard.Models
         public string ProfileName { get; set; }
         public string Email { get; set; }
         public string Bio { get; set; }
+        public string UserId { get; set; }
         public virtual ApplicationUser User { get; set; }
 
         public Profile(string firstName, string lastName, string profileName, string bio)

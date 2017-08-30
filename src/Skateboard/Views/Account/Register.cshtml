@@ -15,5 +15,17 @@
     @Html.LabelFor(user => user.ConfirmPassword)
     @Html.PasswordFor(user => user.ConfirmPassword)
 
+    <label for="firstName">First Name: </label>
+    <input type="text" name="firstName" required />
+
+    <label for="lastName">Last Name: </label>
+    <input type="text" name="lastName" required />
+
+    <label for="profileName">Profile Name: </label>
+    <input type="text" name="profileName" required />
+
+    <label for="bio">Bio: </label>
+    <input type="text" name="bio" required />
+
     <input type="submit" value="Register" />
 }
