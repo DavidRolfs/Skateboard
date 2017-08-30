@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Skateboard.Models.Board>
+
+<h2>List of Skateboards, @User.Identity.Name</h2>
+<hr />
+
+@if (Model.Any())
+{
+    <ul>
+        @foreach (var board in Model)
+        {
+            <li>@Html.DisplayFor(modelItem => board.Brand)</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No tasks have been added yet!</p>
+}
+
+@Html.ActionLink("Create new", "Create")

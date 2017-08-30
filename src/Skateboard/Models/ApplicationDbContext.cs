@@ -18,5 +18,6 @@ namespace Skateboard.Models
             base.OnModelCreating(builder);
         }
         public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Board> Boards { get; set; }
     }
 }

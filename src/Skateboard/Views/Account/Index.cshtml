@@ -1,5 +1,4 @@
 ﻿
-
 @using System.Security.Claims
 
 <h2>Authentication with Identity</h2>
@@ -7,6 +6,7 @@
 @if (User.Identity.IsAuthenticated)
 {
     <p>Hello @User.Identity.Name!</p>
+
     @using (Html.BeginForm("LogOff", "Account"))
     {
         <input type="submit" class="btn btn-default" value="Log out" />
@@ -15,5 +15,6 @@
 else
 {
     <p>@Html.ActionLink("Register", "Register")</p>
+< a href = "~/ViewModels/RegisterViewModel.cs" > ~/ ViewModels / RegisterViewModel.cs </ a >
     <p>@Html.ActionLink("Log in", "Login")</p>
 }

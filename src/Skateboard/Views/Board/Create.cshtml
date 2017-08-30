@@ -1,0 +1,35 @@
+﻿@model Skateboard.Models.Board
+
+<h2>Add a new board</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Brand)
+    @Html.EditorFor(model => model.Brand)
+
+    @Html.LabelFor(model => model.Year)
+    @Html.EditorFor(model => model.Year)
+
+    @Html.LabelFor(model => model.Rider)
+    @Html.EditorFor(model => model.Rider)
+
+    @Html.LabelFor(model => model.Series)
+    @Html.EditorFor(model => model.Series)
+
+    @Html.LabelFor(model => model.Size)
+    @Html.EditorFor(model => model.Size)
+
+    @Html.LabelFor(model => model.Img)
+    @Html.EditorFor(model => model.Img)
+
+
+    @Html.LabelFor(model => model.ForSale)
+    @Html.DropDownList("ForSale", new List<SelectListItem>
+
+                 {
+                    new SelectListItem{ Text="No", Value = "False" },
+                    new SelectListItem{ Text="Yes", Value = "True" }
+                 })
+    <input type="submit" value="Create" />
+}
+@Html.ActionLink("Back to List", "Index")

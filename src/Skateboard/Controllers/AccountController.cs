@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Identity;
 using Skateboard.Models;
 using Skateboard.ViewModels;
 using System.Threading.Tasks;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Skateboard.Controllers
 {
@@ -23,6 +25,7 @@ namespace Skateboard.Controllers
         {
             return View();
         }
+
         public IActionResult Register()
         {
             return View();
