@@ -217,10 +217,15 @@ C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboar
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830160410_AddBoardsTable.Designer.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830165333_Adduser.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830165333_Adduser.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830213712_AddImagesTable.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830213712_AddImagesTable.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830214051_AddImagesTable2.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Migrations\20170830214051_AddImagesTable2.Designer.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Migrations\ApplicationDbContextModelSnapshot.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Models\ApplicationDbContext.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Models\ApplicationUser.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Models\Board.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Models\Image.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\Models\Profile.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\ViewModels\LoginViewModel.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Skateboard\src\Skateboard\ViewModels\RegisterViewModel.cs
