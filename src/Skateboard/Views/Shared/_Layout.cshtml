@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="~/js/JavaScript.js"></script>
+    <title>Porfolio</title>
+</head>
+<body>
+    <h1 class="welcome">Skatebort</h1>
+    <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/Home/About">About</a></li>
+        <li><a href="/Home/Projects">Projects</a></li>
+    </ul>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <ul class="foot-ul">
+        </ul>
+    </div>
+</body>
+</html>

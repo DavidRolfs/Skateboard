@@ -1,15 +1,20 @@
-﻿@model IEnumerable<Skateboard.Models.Board>
+﻿@{
+    ViewData["Title"] = "Board";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<h2>List of Skateboards, @User.Identity.Name</h2>
+@model IEnumerable<Skateboard.Models.Board>
+
+@Html.ActionLink("Create new", "Create")
 <hr />
 
-@if (Model.Any())
+@*@if (Model.Any())
 {
     <ul>
         @foreach (var board in Model)
         {
-            <li>@Html.DisplayFor(modelItem => board.Brand)
-                @Html.ActionLink("Details", "Details", new { id = board.Id })
+            <li> <img src="@Html.DisplayFor(modelItem => board.Img)" />
+                @Html.ActionLink(".", "Details", new { id = board.Id })
             </li>
         }
     </ul>
@@ -17,6 +22,16 @@
 else
 {
     <p>No tasks have been added yet!</p>
-}
+}*@
 
-@Html.ActionLink("Create new", "Create")
+
+
+
+<div class="gallery cf">
+    @foreach (var board in Model)
+    {
+    <div>
+        <img src="@Html.DisplayFor(modelItem => board.Img)" />
+    </div>
+    }
+</div>

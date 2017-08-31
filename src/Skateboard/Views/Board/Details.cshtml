@@ -1,4 +1,9 @@
-﻿@model Skateboard.Models.Board
+﻿@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Skateboard.Models.Board
 
 <p>@Html.DisplayNameFor(model => model.Brand): @Html.DisplayFor(model => model.Brand)</p>
 <p>@Html.DisplayNameFor(model => model.Year) : @Html.DisplayFor(model => model.Year)</p>
