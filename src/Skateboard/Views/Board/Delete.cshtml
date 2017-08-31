@@ -1,0 +1,10 @@
+﻿@model Skateboard.Models.Boards
+
+<h2>Are you sure you want to delete this?</h2>
+<hr />
+@Html.DisplayNameFor(model => model.Brand): @Html.DisplayFor(model => model.Brand)
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+<p>@Html.ActionLink("Back to list", "Index")</p>

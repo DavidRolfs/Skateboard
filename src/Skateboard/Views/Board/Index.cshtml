@@ -31,7 +31,10 @@ else
     @foreach (var board in Model)
     {
     <div>
+        @*<button onclick="@Url.Action("Details", "Details", new {id = board.Id })">Cancel</button>*@
+
         <img src="@Html.DisplayFor(modelItem => board.Img)" />
     </div>
     }
 </div>
+

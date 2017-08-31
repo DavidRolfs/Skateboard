@@ -58,5 +58,20 @@ namespace Skateboard.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Delete(int id)
+        {
+            var thisBoard = _db.Boards.FirstOrDefault(boards => boards.Id == id);
+            return View(thisBoard);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var thisBoard = _db.Boards.FirstOrDefault(boards => boards.Id == id);
+            _db.Boards.Remove(thisBoard);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
